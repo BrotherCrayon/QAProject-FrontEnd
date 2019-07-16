@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Listify create account</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+
+    <script src='main.js'></script>
+</head>
+<body>
+
+    <!-- Navigation -->
+<nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+    <div class="container-fluid">
+        <a class="navbar-brand ml-2" href="#"> <img src="img/logo3.png" width="150" height="" alt=""> </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse"
+        data-target="#navbarResponsive"	name="button">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <button class="btn btn-lg btn-outline-secondary mr-3" type="button" href="signup.html">Sign Up</button>
+                <button class="btn btn-lg btn-outline-secondary mr-4" type="button">Log in</button>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="container-fluid padding">
+    <div class="row padding">
+        <div class="mx-auto signCard">
+            <div class="card logIn">
+                <div class="card-body">
+                    <h4 class="card-title">Create your account</h4>
+                    <p class="card-text">Enter your new account details below</p>
+                    <form action="">
+                        <div class="form-group">
+                                <label for="exampleInputEmail1">Name</label>
+                                <input type="text" class="form-control" id="nameInput" aria-describedby="emailHelp" placeholder="Enter your name">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Email address</label>
+                                <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp" placeholder="Enter email">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputPassword1">Password</label>
+                                <input type="password" class="form-control" id="inputPassword1" placeholder="Password">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputPassword1">Repeat password</label>
+                                <input type="password" class="form-control" id="repeatPassword" placeholder="Repeat password">
+                                <small id="passHelp" class="form-text text-muted">Passwords must match</small>
+                            </div>
+                            <div class="d-flex">
+                                <button type="submit" class="btn btn-outline-secondary ml-5 ml-auto">Create</button>
+                            </div>
+                            <div class="newAcc">Got an account? <a href="login.html">Log in</a></div>
+                        </form>
+                </div>
+            </div>
+        </div>  
+    </div>
+</div>
+
+<!--- Footer -->
+<footer>
+    <div class="container-fluid ">
+        <div class="row text-center">
+                <div class="col-md-4 footLog">
+                <img class="" src="img/logo.png" width="200" alt="">
+            </div>
+            <div class="col-md-4 ft">
+                <h5>Contact</h5>
+                <hr class="light">
+                <p>Mobile:</p>
+                <p>1111-111-1111</p>
+            </div>
+            <div class="col-md-4 ft">
+                <h5>Open Hours</h5>
+                <hr class="light">
+                <p>none</p>
+                <p>go home</p>
+            </div>
+            <div class="col-12">
+                <hr class="light-100">
+                <h5>&copy; website.org</h5>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>

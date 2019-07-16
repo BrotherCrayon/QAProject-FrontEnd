@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
+
+html, body {
+    height: 100vh;
+    width: 100%;
+    color: #1d1d1d;
+    background-image: url(img/background3.jpg);
+    background-size: inherit;
+    background-repeat: no-repeat;   
+}
+
+/* navbar */
+.navbar{
+    padding: .1rem;
+    color: #d5d5d5;
+}
+.navbar-nav{
+    padding-right: 10px;
+}
+.bg-light {
+    background-color: #3f3f3fee!important;
+}
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
+    color: #d5d5d5;
+}
+.btn{
+    padding-top: .6rem;
+    padding-bottom: .6rem;
+    padding-left: .8rem;
+    padding-right: .8rem;
+    margin: .6rem;
+    background-color: #3f3f3f;
+    color: #d5d5d5;
+    border-color: #d5d5d5;
+}
+#btnlog {
+    margin: 0 auto;
+}
+
+/* cards*/
+.mx-auto {
+    margin: 10%;
+    border: #3f3f3f;
+    border-radius: .5rem;
+    color: #d5d5d5;
+}
+.card {
+    background-color: #3f3f3fee;
+    border: #1d1d1d;
+    border-width: thin;    
+}
+.signCard {
+    margin: 5%;
+    min-width: 60%;
+}
+.text-muted {
+    color: #d5d5d5;
+}
+.form-text {
+    color: #d5d5d5;
+}
+
+
+/* lsitsidebar */
+.list-group {
+    background-color: #3f3f3fee;
+    height: 100vh;
+    column-span: all;
+
+}
+.list-group-item {
+    color: #d5d5d5;
+    background-color: #3f3f3f;
+   
+}
+
+.listCard {
+    margin-right: 3%;
+    margin-left: 2%;
+}
+
+
+/* footer */
+footer{
+    background-color: #3f3f3f;
+    color: #d5d5d5;
+    padding-top: .5rem;
+        /* position: absolute;
+        bottom: 0;
+        width: 100%; */
+}
+hr.light{
+    border-top: 1px solid #d5d5d5;
+    width: 75%;
+    margin-top: .8rem;
+    margin-bottom: 1rem;
+}
+footer a{ /* to remove blue colour in footer */
+    color: #d5d5d5;
+}
+hr.light-100 {
+    border-top: 1px solid #d5d5d5;
+    width: 95%;
+    margin-top: 1rem;
+    margin-bottom: .2rem;
+}
