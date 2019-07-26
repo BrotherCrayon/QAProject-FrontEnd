@@ -10,8 +10,6 @@
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
 		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<link rel='stylesheet' type='text/css' media='screen' href='style.css'>
-
-	<script src='main.js'></script>
 </head>
 
 <body>
@@ -25,7 +23,8 @@
 			</button>
 			<div class="collapse navbar-collapse" id="navbarResponsive">
 				<ul class="navbar-nav ml-auto">
-					<button class="btn btn-lg btn-outline-secondary" width="200" type="button" href="signup.html">Log out</button>
+					<button class="btn btn-lg btn-outline-secondary" width="200" type="button" onclick="window.location.href='user.html'">My Account</button>
+					<button class="btn btn-lg btn-outline-secondary" width="200" type="button" onclick="return logout(this)">Log out</button>
 					</ul>
 			</div>
 		</div>

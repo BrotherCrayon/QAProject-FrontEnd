@@ -8,8 +8,6 @@
     
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
-
-    <script src='main.js'></script>
 </head>
 <body>
 
@@ -23,8 +21,8 @@
 		</button>
 		<div class="collapse navbar-collapse" id="navbarResponsive">
 			<ul class="navbar-nav ml-auto">
-                <button class="btn btn-lg btn-outline-secondary mr-3" type="button" href="signup.html">Sign Up</button>
-                <button class="btn btn-lg btn-outline-secondary mr-4" type="button">Log in</button>
+                <button class="btn btn-lg btn-outline-secondary mr-3" type="button" href="index.html">Home</button>
+                <button class="btn btn-lg btn-outline-secondary mr-4" type="button">Logout</button>
 			</ul>
 		</div>
 	</div>
@@ -32,14 +30,14 @@
 
 <div class="container-fluid padding">
     <div class="row padding">
-        <div class="userDeet">
+        <div class="mx-auto userClass" width="280">
             <div class="card">
-                <div class="card-body">
+                <div class="card-body" id="nameSpan">
                     <h4 class="card-title">Account Details</h4>
-                    <p class="card-text">Name</p>
-                    <p class="card-text">Password</p>
-                    <p class="card-text">Deets</p>
-                    
+                </div>
+                <div>
+                    <button onclick="DeleteUser(this)" class="btn btn-outline-secondary ml-4">Delete</button>
+                    <button class="btn btn-outline-secondary mx-auto">Update</button>
                 </div>
             </div>
         </div>  
@@ -72,6 +70,9 @@
         </div>
     </div>
 </footer>
+
+<script src="registerSuccess.js"></script>
+<script src="userControl.js"></script>
 
 </body>
 </html>
