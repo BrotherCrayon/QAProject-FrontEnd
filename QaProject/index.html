@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset='utf-8'>
+	<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+	<title>Listify home</title>
+	<meta name='viewport' content='width=device-width, initial-scale=1'>
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+</head>
+
+<body>
+	<!-- Navigation -->
+	<nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+		<div class="container-fluid">
+			<a class="navbar-brand ml-2" > <img src="img/logo3.png" width="150" height="" alt=""> </a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse"
+			data-target="#navbarResponsive"	name="button">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarResponsive">
+				<ul class="navbar-nav ml-auto">
+					<button class="btn btn-lg btn-outline-secondary" width="200" type="button" onclick="window.location.href='user.html'">My Account</button>
+					<button class="btn btn-lg btn-outline-secondary" width="200" type="button" onclick="logout()">Log out</button>
+					</ul>
+			</div>
+		</div>
+	</nav>
+
+	<div class="container">
+		<div class="row"></div>
+	</div>
+
+	<div class="containter">
+		<div class="row">
+
+			<div class="container col-3 list-group">
+				<a href="#" class="list-group-item list-group-item-action">List 1 placeholder</a>
+				<a href="#" class="list-group-item list-group-item-action">List 2 placeholder</a>
+				<a href="#" class="list-group-item list-group-item-action">List 3 placeholder</a>
+				<br>
+			</div>
+
+			<div class="container col-9 mainlist">
+				<br>
+				<br>
+				<div class="card listCard">
+					<div class="card-body">
+						<!-- list 1 is a placeholder, when lists are created, parse name here instead -->
+						<h4 class="card-title">List 1</h4>
+						<div class="container">
+							<form class="listForm">
+								<div id="addItemsHere">
+									<p></p>
+								</div>
+								<div class="input-group" id="listItem">
+									<div class="custom-control custom-checkbox">
+										<input type="checkbox" class="custom-control-input" id="ticklist">
+										<label class="custom-control-label" for="ticklist"></label>
+									</div>
+									<input type="text" id="listItemAdd" class="form-control listForm" required>
+									<button class="btn btn-outline-secondary btn-rem">Remove</button>
+								</div>
+								<button type="button" onclick="addToList()" class="btn btn-sm btn-primary add-list">Add Item</button>
+
+							</form>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+
+		</div><!-- row -->
+	</div> <!-- container -->
+
+
+	<!--- Footer -->
+<footer>
+	<div class="container-fluid ">
+		<div class="row text-center">
+				<div class="col-md-4 footLog">
+				<img class="" src="img/logo.png" width="200" alt="">
+			</div>
+			<div class="col-md-4 ft">
+				<h5>Contact</h5>
+				<hr class="light">
+				<p>Mobile:</p>
+				<p>1111-111-1111</p>
+			</div>
+			<div class="col-md-4 ft">
+				<h5>Open Hours</h5>
+				<hr class="light">
+				<p>none</p>
+				<p>go home</p>
+			</div>
+			<div class="col-12">
+				<hr class="light-100">
+				<h5>&copy; website.org</h5>
+			</div>
+		</div>
+	</div>
+</footer>
+	<script src="apiRequest.js"></script>
+	<script src="taskControl.js"></script>
+	<script src="userControl.js"></script>
+	<script src="tickList.js"></script>
+</body>
+
+</html>

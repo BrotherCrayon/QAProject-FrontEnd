@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
+
+html, body {
+    height: 100vh;
+    width: 100%;
+    color: #252525;
+    background-image: url(img/background3.jpg);
+    background-size: inherit;
+    background-repeat: no-repeat;   
+}
+h1{
+    color: #252525;
+}
+h3{
+    color: #252525;
+}
+h4{
+    color: #252525;
+}
+h5{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+/* navbar */
+.navbar{
+    padding: .05rem;
+    color: #1a1a1a;
+    position: relative;
+}
+.navbar-nav{
+    padding-right: 10px;
+}
+.bg-light { 
+    background-color: #dbdbdbcc!important;
+}
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
+    color: #1a1a1a;
+}
+
+/* general */
+
+.btn{
+    padding-top: .6rem;
+    padding-bottom: .6rem;
+    padding-left: .8rem;
+    padding-right: .8rem;
+    margin: .2rem;
+    background-color: #f0f0f0;
+    color: #1a1a1a;
+    border-color: #0EBEE6;
+    border-radius: .25rem;
+}
+.btn:hover {
+    /* background-color: rgb(41, 173, 202); */
+    background-color: #0EBEE6;
+}
+.btn-sm {
+    /* padding: .3rem; */
+    /* text-size-adjust: 1rem; */
+    margin-top: 1rem;
+    min-width: 7rem;
+    margin-left: 0%;
+}
+.btn-lg {
+    min-width: 7rem;
+}
+.newAcc {
+    font-size: 14px;
+}
+.form-group {
+    padding: 0rem;
+    margin: 0.5rem;
+}
+.btn-danger:hover{
+    background-color: #9c0101f5;
+}
+.btn-rem {
+    padding: .1rem;
+    text-anchor: middle;
+}
+
+
+/* cards*/
+.mx-auto {
+    margin: 13%;
+    border: rgb(230, 245, 248);
+    color: #1a1a1a;
+}
+.card {
+    background-color: #dbdbdbbe;
+    border: 0.5px solid #dbdbdbd5;
+}
+.signCard {
+    margin: 5%;
+    min-width: 45%;
+}
+.form-control    {
+    border:1px solid #0EBEE6;
+}
+.form-control:hover{
+    box-shadow: 0px 2.5px 2px #1d1d1d85;
+}
+.logIn {
+    border-radius: 0.8rem;
+    min-width: 30%;
+}
+.newAcc {
+    float: inherit;
+}
+.userDeet {
+    margin-top: 10%;
+}
+.userClass {
+    width: 80%;
+    margin: 5%;
+}
+.detailsText{
+    padding-left: 4%;
+}
+.detailsText{
+    padding-left: 2%;
+}
+.updateForm {
+    width: 60%;
+}
+.my-4{
+    border: solid 1px #dbdbdb;
+     /* #25252593; */
+}
+
+/* list sidebar */
+.list-group {
+    background-color: #dbdbdbbe;
+    height: 100vh;
+    padding-left: 1%;
+    padding-right: 0%;
+    /* column-span: all; */
+}
+.list-group-item {
+    color: #1a1a1a;
+    background-color: #dbdbdb;
+    border: 1px solid #0EBEE6;
+    margin-bottom: 1%;
+    /* border-radius: 5rem; */
+    width: 95%;
+    margin-left: 8px;
+
+}
+.listCard {
+    margin-right: 3%;
+    margin-left: 2%;
+    border-radius: 0.8rem;
+}
+.active {
+    background-color: #dbdbdb;
+}
+
+/* tickbox */
+.custom-checkbox label::before{
+    border: 1px solid #0EBEE6;
+    border-radius: 25rem;
+    
+    background:whitesmoke;
+    height: 2rem;
+    width: 2rem;
+}
+.custom-checkbox label::after{
+    border: 1px solid #0EBEE6;
+    color: #0EBEE6;
+    height: 2rem;
+    width: 2rem;
+}
+.custom-checkbox{
+    margin-right: 1rem;     
+}
+
+.tickedoff{
+    box-shadow: 0px 0px 0px;
+    height: 3rem;
+}
+
+/* footer */
+footer{
+    background-color: #dbdbdb;
+    color: #1a1a1a;
+    /* padding-top: 0rem; */
+        /* position: absolute;
+        bottom: 0;
+        width: 100%; */
+}
+hr.light{
+    border-top: 1px solid #0EBEE6;
+    width: 80%;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+footer a{ /* to remove blue colour in footer */
+    color: #1a1a1a;
+}
+hr.light-100 {
+    border-top: 1px solid #0EBEE6;
+    width: 95%;
+    margin-top: .8rem;
+    margin-bottom: .2rem;
+}
+.footLog {
+    margin-top: 0.5rem;
+}
+.ft p{
+    padding: 0rem;
+}
