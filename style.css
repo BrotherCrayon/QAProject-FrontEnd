@@ -3,15 +3,28 @@
 html, body {
     height: 100vh;
     width: 100%;
-    color: #1d1d1d;
+    color: #252525;
     background-image: url(img/background3.jpg);
     background-size: inherit;
     background-repeat: no-repeat;   
 }
-
+h1{
+    color: #252525;
+}
+h3{
+    color: #252525;
+}
+h4{
+    color: #252525;
+}
 h5{
     margin-top: 1rem;
     margin-bottom: 1rem;
+}
+h6{
+    color: #252525;
+    padding: 1%;
+    font-size: 13pt
 }
 /* navbar */
 .navbar{
@@ -63,6 +76,13 @@ h5{
     padding: 0rem;
     margin: 0.5rem;
 }
+.btn-danger:hover{
+    background-color: #9c0101f5;
+}
+.btn-rem {
+    padding: .1rem;
+    text-anchor: middle;
+}
 
 
 /* cards*/
@@ -94,6 +114,23 @@ h5{
 }
 .userDeet {
     margin-top: 10%;
+}
+.userClass {
+    width: 80%;
+    margin: 5%;
+}
+.detailsText{
+    padding-left: 4%;
+}
+.detailsText{
+    padding-left: 2%;
+}
+.updateForm {
+    width: 60%;
+}
+.my-4{
+    border: solid 1px #dbdbdb;
+     /* #25252593; */
 }
 
 /* list sidebar */
@@ -176,4 +213,24 @@ hr.light-100 {
 }
 .ft p{
     padding: 0rem;
+}
+
+
+
+#loginError {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    width: 300px;
+    height: 50px;
+    margin-left: -150px;
+
+    padding-top: 13px;
+
+    background-color: #ff3344;
+    text-align: center;
+    border-radius: 5px;
+    color: white;
+
+    display: none;
 }

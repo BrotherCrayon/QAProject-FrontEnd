@@ -3,13 +3,11 @@
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Listify log in</title>
+    <title>Listify account details</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
-
-    <script src='main.js'></script>
 </head>
 <body>
 
@@ -22,25 +20,55 @@
 			<span class="navbar-toggler-icon"></span>
 		</button>
 		<div class="collapse navbar-collapse" id="navbarResponsive">
-			<ul class="navbar-nav ml-auto">
-                <button class="btn btn-lg btn-outline-secondary mr-3" type="button" href="signup.html">Sign Up</button>
-                <button class="btn btn-lg btn-outline-secondary mr-4" type="button">Log in</button>
-			</ul>
+                <ul class="navbar-nav ml-auto">
+                    <button class="btn btn-lg btn-outline-secondary" width="200" type="button" onclick="window.location.href='index.html'">My Listify</button>
+                    <button class="btn btn-lg btn-outline-secondary" width="200" type="button" onclick="logout()">Log out</button>
+                </ul>
 		</div>
 	</div>
 </nav>
 
 <div class="container-fluid padding">
     <div class="row padding">
-        <div class="userDeet">
+        <div class="mx-auto userClass">
             <div class="card">
-                <div class="card-body">
-                    <h4 class="card-title">Account Details</h4>
-                    <p class="card-text">Name</p>
-                    <p class="card-text">Password</p>
-                    <p class="card-text">Deets</p>
-                    
+                <div class="card-body" id="cardDetails">
+                    <h1 class="card-title">Account Details</h1>
                 </div>
+                <div class="detailsText" id="nameSpan"><h4>Username</h4></div>
+                <div class="detailsText" id="userName"></div>
+                <br>    
+                <div class="detailsText" id="userPass"><h4>Password</h4></div>
+                <hr class="my-4">
+                <h3 class="detailsText">Update your details</h3>
+                <div id="updateAccount">  
+                    <form action="" onsubmit="return updateAccount(this)">
+                        <div class="form-group">
+                                <label for="userName">New name</label>
+                                <input type="text" class="form-control updateForm" id="userName" placeholder="New username ">
+                            </div>
+                            <!-- <div class="form-group">
+                                <label for="userEmail">Email address</label>
+                                <input type="email" class="form-control" id="userEmail"  placeholder="Enter email">
+                            </div> -->
+                            <div class="form-group">
+                                <label for="userPass">New password</label>
+                                <input type="password" class="form-control updateForm" id="userPass" placeholder="New password">
+                            </div>
+                            <!-- <div class="form-group">
+                                <label for="userPassRepeat">Repeat password</label>
+                                <input type="password" class="form-control" id="userPassrepeat" placeholder="Repeat password">
+                                <small id="passHelp" class="form-text text-muted">Passwords must match</small>
+                            </div> -->
+                            <div class="d-flex">
+                                <button type="submit" class="btn btn-outline-secondary ml-2 mr-4 mb-2">Update account</button>
+                                
+                                <button onclick="deleteAccount();" class="btn btn-sm btn-danger ml-auto mr-2 mb-2">Delete account</button>
+                            </div>
+                            
+                    </form>
+                </div>
+                
             </div>
         </div>  
     </div>
@@ -73,5 +101,8 @@
     </div>
 </footer>
 
+<script src="apiRequest.js"></script>
+<script src="userControl.js"></script>
+<script>getAccount();</script>
 </body>
 </html>

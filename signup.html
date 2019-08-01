@@ -8,8 +8,6 @@
     
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
-
-    <script src='main.js'></script>
 </head>
 <body>
 
@@ -23,8 +21,6 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ml-auto">
-                <button class="btn btn-lg btn-outline-secondary mr-3" type="button" href="signup.html">Sign Up</button>
-                <button class="btn btn-lg btn-outline-secondary mr-4" type="button">Log in</button>
             </ul>
         </div>
     </div>
@@ -37,29 +33,30 @@
                 <div class="card-body">
                     <h4 class="card-title">Create your account</h4>
                     <p class="card-text">Enter your new account details below</p>
-                    <form action="">
+                    <form action="" onsubmit="return registerAccount(this)">
                         <div class="form-group">
-                                <label for="exampleInputEmail1">Name</label>
-                                <input type="text" class="form-control" id="nameInput" aria-describedby="emailHelp" placeholder="Enter your name">
+                                <label for="userName">Name</label>
+                                <input type="text" class="form-control" id="userName" placeholder="Enter your name">
                             </div>
+                            <!-- <div class="form-group">
+                                <label for="userEmail">Email address</label>
+                                <input type="email" class="form-control" id="userEmail"  placeholder="Enter email">
+                            </div> -->
                             <div class="form-group">
-                                <label for="exampleInputEmail1">Email address</label>
-                                <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp" placeholder="Enter email">
+                                <label for="userPass">Password</label>
+                                <input type="password" class="form-control" id="userPass" placeholder="Password">
                             </div>
-                            <div class="form-group">
-                                <label for="exampleInputPassword1">Password</label>
-                                <input type="password" class="form-control" id="inputPassword1" placeholder="Password">
-                            </div>
-                            <div class="form-group">
-                                <label for="exampleInputPassword1">Repeat password</label>
-                                <input type="password" class="form-control" id="repeatPassword" placeholder="Repeat password">
+                            <!-- <div class="form-group">
+                                <label for="userPassRepeat">Repeat password</label>
+                                <input type="password" class="form-control" id="userPassrepeat" placeholder="Repeat password">
                                 <small id="passHelp" class="form-text text-muted">Passwords must match</small>
-                            </div>
+                            </div> -->
                             <div class="d-flex">
                                 <button type="submit" class="btn btn-outline-secondary ml-5 ml-auto">Create</button>
                             </div>
-                            <div class="newAcc">Got an account? <a href="login.html">Log in</a></div>
-                        </form>
+                            <div class="newAcc">Got an account? <a href="login.html">Log in</a>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>  
@@ -92,6 +89,10 @@
         </div>
     </div>
 </footer>
+
+<script src="registerAccount.js"></script>
+<script src="apiRequest.js"></script>
+<script src="registerSuccess.js"></script>
 
 </body>
 </html>

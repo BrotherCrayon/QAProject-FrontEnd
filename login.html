@@ -8,8 +8,6 @@
     
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
-
-    <script src='main.js'></script>
 </head>
 <body>
 
@@ -23,8 +21,7 @@
 		</button>
 		<div class="collapse navbar-collapse" id="navbarResponsive">
 			<ul class="navbar-nav ml-auto">
-                <button class="btn btn-lg btn-outline-secondary mr-3" type="button" href="signup.html">Sign Up</button>
-                <button class="btn btn-lg btn-outline-secondary mr-4" type="button">Log in</button>
+                
 			</ul>
 		</div>
 	</div>
@@ -37,21 +34,22 @@
                 <div class="card-body">
                     <h4 class="card-title">Log into your account</h4>
                     <p class="card-text"></p>
-                    <form action=""> <!--onclick here -->
+                    <form action="" onclick="return userLogin(this)"> 
                         <div class="form-group">
-                            <label for="inputEmail">Email address</label>
-                            <input type="email" class="form-control" id="inputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                            <label for="userName">Username</label>
+                            <input type="text" class="form-control" id="userName" placeholder="Enter username">
                         </div>
                         <div class="form-group">
-                            <label for="inputPassword">Password</label>
-                            <input type="password" class="form-control" id="inputPassword1" placeholder="Password">
+                            <label for="userPass">Password</label>
+                            <input type="password" class="form-control" id="userPass" placeholder="Password">
                         </div>
 
                         <div class="d-flex">
                             <button type="submit" class="btn btn-outline-secondary mr-8 ml-auto ">Submit</button>
                         </div>
-                        <div class="newAcc">Don't have an account? <a href="signup.html">Sign Up</a></div>
+                        <div class="newAcc">Don't have an account? <a href='signup.html'>Sign Up</a></div>
                     </form>
+                    <div id="loginError"></div>
                 </div>
             </div>
         </div>  
@@ -84,6 +82,9 @@
         </div>
     </div>
 </footer>
+
+<script src="apiRequest.js"></script>
+<script src="login.js"></script>
 
 </body>
 </html>
