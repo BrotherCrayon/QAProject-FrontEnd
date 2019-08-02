@@ -28,15 +28,15 @@
 
 <div class="container-fluid padding">
     <div class="row padding">
-        <div class="mx-auto signCard">
-            <div class="card logIn">
+        <div class="mx-auto logIn">
+            <div class="card">
                 <div class="card-body">
-                    <h4 class="card-title">Create your account</h4>
+                    <h1 class="card-title titleWord">Create account</h1>
                     <p class="card-text">Enter your new account details below</p>
                     <form action="" onsubmit="return registerAccount(this)">
                         <div class="form-group">
-                                <label for="userName">Name</label>
-                                <input type="text" class="form-control" id="userName" placeholder="Enter your name">
+                                <label for="userName">Username</label>
+                                <input type="text" class="form-control" id="userName" placeholder="Enter your name" required>
                             </div>
                             <!-- <div class="form-group">
                                 <label for="userEmail">Email address</label>
@@ -44,7 +44,7 @@
                             </div> -->
                             <div class="form-group">
                                 <label for="userPass">Password</label>
-                                <input type="password" class="form-control" id="userPass" placeholder="Password">
+                                <input type="password" class="form-control" id="userPass" placeholder="Password" required>
                             </div>
                             <!-- <div class="form-group">
                                 <label for="userPassRepeat">Repeat password</label>

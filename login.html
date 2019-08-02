@@ -32,16 +32,16 @@
         <div class="mx-auto logIn">
             <div class="card">
                 <div class="card-body">
-                    <h4 class="card-title">Log into your account</h4>
-                    <p class="card-text"></p>
-                    <form action="" onclick="return userLogin(this)"> 
+                    <h1 class="card-title titleWord">User login</h1>
+                    <p class="card-text">Enter your details below</p>
+                    <form action="" onsubmit="return userLogin(this)"> 
                         <div class="form-group">
                             <label for="userName">Username</label>
-                            <input type="text" class="form-control" id="userName" placeholder="Enter username">
+                            <input type="text" class="form-control" id="userName" placeholder="Enter username" required>
                         </div>
                         <div class="form-group">
                             <label for="userPass">Password</label>
-                            <input type="password" class="form-control" id="userPass" placeholder="Password">
+                            <input type="password" class="form-control" id="userPass" placeholder="Password" required>
                         </div>
 
                         <div class="d-flex">

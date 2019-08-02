@@ -13,17 +13,18 @@ function userLogin(form) {
     makeRequest("POST", loginAPI, userLogin)
     .then((value) => {  
         if(!isNaN(value)) {
+            // wont work, need to catch exception in backend first
             // window.alert("Incorrect username or password");
-            const errorDiv = document.getElementById('loginError');
-            errorDiv.style.display = "block";
+            const loginError = document.getElementById('loginError');
+            loginError.style.display = "block";
         } else {
             sessionStorage.setItem("storeUserLogin", value);
             toHome();
         }
     })
     .catch((error) => {
-        console.warn(error);
-        errorNote(value.message);
+        // console.warn(error);
+        window.alert("wrong username or password");
     });
 
     return false;

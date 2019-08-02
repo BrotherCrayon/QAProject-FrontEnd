@@ -26,6 +26,10 @@ h6{
     padding: 1%;
     font-size: 13pt
 }
+.titleWord{
+    /* margin-left: 35%; */
+    text-align: center;
+}
 /* navbar */
 .navbar{
     padding: .05rem;
@@ -36,7 +40,7 @@ h6{
     padding-right: 10px;
 }
 .bg-light { 
-    background-color: #dbdbdbcc!important;
+    background-color: #dbdbdbda!important;
 }
 .navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
     color: #1a1a1a;
@@ -53,7 +57,8 @@ h6{
     background-color: #f0f0f0;
     color: #1a1a1a;
     border-color: #0EBEE6;
-    border-radius: .25rem;
+    /* border-radius: .25rem; */
+    border-radius: .6rem;
 }
 .btn:hover {
     /* background-color: rgb(41, 173, 202); */
@@ -92,22 +97,24 @@ h6{
     color: #1a1a1a;
 }
 .card {
-    background-color: #dbdbdbbe;
+    background-color: #dbdbdbda;
     border: 0.5px solid #dbdbdbd5;
 }
+.logIn {
+    min-width: 50%;
+    border-radius: 0.8rem;
+    margin: 8%;
+}
 .signCard {
-    margin: 5%;
-    min-width: 45%;
+    margin: 8%;
+    border-radius: 0.8rem;
+    min-width: 50%;
 }
 .form-control    {
     border:1px solid #0EBEE6;
 }
 .form-control:hover{
     box-shadow: 0px 2.5px 2px #1d1d1d85;
-}
-.logIn {
-    border-radius: 0.8rem;
-    min-width: 30%;
 }
 .newAcc {
     float: inherit;
@@ -135,7 +142,7 @@ h6{
 
 /* list sidebar */
 .list-group {
-    background-color: #dbdbdbbe;
+    background-color: #dbdbdbda;
     height: 100vh;
     padding-left: 1%;
     padding-right: 0%;
@@ -215,22 +222,3 @@ hr.light-100 {
     padding: 0rem;
 }
 
-
-
-#loginError {
-    position: fixed;
-    left: 50%;
-    top: 50%;
-    width: 300px;
-    height: 50px;
-    margin-left: -150px;
-
-    padding-top: 13px;
-
-    background-color: #ff3344;
-    text-align: center;
-    border-radius: 5px;
-    color: white;
-
-    display: none;
-}
